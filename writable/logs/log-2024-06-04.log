@@ -1,0 +1,581 @@
+INFO - 2024-06-04 15:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-04 15:32:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db-koncolawas', 3306, '', 0)
+#1 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rpl\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\rpl\app\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\rpl\app\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc...')
+#6 C:\xampp\htdocs\rpl\system\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+#7 C:\xampp\htdocs\rpl\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\rpl\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rpl\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rpl\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\rpl\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpl\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpl\app\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpl\app\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc...')
+#5 C:\xampp\htdocs\rpl\system\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+#6 C:\xampp\htdocs\rpl\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\rpl\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rpl\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rpl\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\rpl\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-06-04 15:32:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: Auth/CekLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `nama_user` = :nama_user:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc35165329ea1ff5c5ecbdbbeef')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-06-04 15:32:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db-koncolawas', 3306, '', 0)
+#1 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rpl\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\rpl\app\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\rpl\app\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc...')
+#6 C:\xampp\htdocs\rpl\system\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+#7 C:\xampp\htdocs\rpl\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\rpl\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rpl\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rpl\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\rpl\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpl\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpl\app\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpl\app\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc...')
+#5 C:\xampp\htdocs\rpl\system\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+#6 C:\xampp\htdocs\rpl\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\rpl\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rpl\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rpl\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\rpl\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-06-04 15:32:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: Auth/CekLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `nama_user` = :nama_user:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc35165329ea1ff5c5ecbdbbeef')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 15:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-04 15:33:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db-koncolawas', 3306, '', 0)
+#1 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rpl\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\rpl\app\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\rpl\app\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc...')
+#6 C:\xampp\htdocs\rpl\system\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+#7 C:\xampp\htdocs\rpl\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\rpl\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rpl\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rpl\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\rpl\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\rpl\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rpl\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rpl\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\rpl\app\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\rpl\app\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc...')
+#5 C:\xampp\htdocs\rpl\system\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+#6 C:\xampp\htdocs\rpl\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\rpl\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rpl\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rpl\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\rpl\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-06-04 15:33:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: Auth/CekLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `nama_user` = :nama_user:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelUser.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(38): App\Models\ModelUser->LoginUser('Dijal', '40bd001563085fc35165329ea1ff5c5ecbdbbeef')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 15:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:33:13 --> Cart Class Initialized
+INFO - 2024-06-04 15:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:33:18 --> Cart Class Initialized
+INFO - 2024-06-04 15:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:33:18 --> Cart Class Initialized
+INFO - 2024-06-04 15:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:33:32 --> Cart Class Initialized
+INFO - 2024-06-04 15:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:33:42 --> Cart Class Initialized
+INFO - 2024-06-04 15:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 15:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:35:08 --> Cart Class Initialized
+INFO - 2024-06-04 16:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:35:13 --> Cart Class Initialized
+INFO - 2024-06-04 16:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:35:13 --> Cart Class Initialized
+INFO - 2024-06-04 16:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:35:21 --> Cart Class Initialized
+CRITICAL - 2024-06-04 16:35:21 --> ErrorException: Undefined variable $nomor_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomor_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 16:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:47:17 --> Cart Class Initialized
+CRITICAL - 2024-06-04 16:47:17 --> ErrorException: Undefined variable $nomor_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomor_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 16:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:47:25 --> Cart Class Initialized
+CRITICAL - 2024-06-04 16:47:25 --> ErrorException: Undefined variable $nomor_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomor_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 16:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:47:33 --> Cart Class Initialized
+INFO - 2024-06-04 16:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:03 --> Cart Class Initialized
+INFO - 2024-06-04 16:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:05 --> Cart Class Initialized
+INFO - 2024-06-04 16:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:07 --> Cart Class Initialized
+INFO - 2024-06-04 16:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:14 --> Cart Class Initialized
+INFO - 2024-06-04 16:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:25 --> Cart Class Initialized
+CRITICAL - 2024-06-04 16:48:25 --> ErrorException: Undefined variable $nomor_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomor_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 16:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:46 --> Cart Class Initialized
+INFO - 2024-06-04 16:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:53 --> Cart Class Initialized
+INFO - 2024-06-04 16:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:48:54 --> Cart Class Initialized
+INFO - 2024-06-04 16:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:49:00 --> Cart Class Initialized
+INFO - 2024-06-04 16:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 16:49:02 --> Cart Class Initialized
+INFO - 2024-06-04 17:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:10:53 --> Cart Class Initialized
+INFO - 2024-06-04 17:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:13:58 --> Cart Class Initialized
+INFO - 2024-06-04 17:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:14:04 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:14:04 --> ErrorException: Undefined variable $nomor_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomor_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:16:04 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:16:04 --> ErrorException: Undefined variable $nomor_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomor_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:16:10 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:16:10 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:16:12 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:16:12 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:16:18 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:16:18 --> ErrorException: Undefined variable $nomormeja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomormeja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:17:12 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:17:12 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:17:13 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:17:13 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:17:14 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:17:14 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:17:14 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:17:14 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:17:38 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:17:38 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:17:43 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:17:43 --> ErrorException: Undefined variable $no_meja
+[Method: GET, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:18:31 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:18:31 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:18:31 --> Cart Class Initialized
+CRITICAL - 2024-06-04 17:18:31 --> ErrorException: Undefined variable $no_meja
+[Method: POST, Route: keranjang]
+in APPPATH\Views\v_keranjang.php on line 41.
+ 1 APPPATH\Views\v_keranjang.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_meja', 'C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_keranjang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_keranjang', [], true)
+ 5 APPPATH\Views\v_template.php(403): view('v_keranjang')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\rpl\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Keranjang.php(53): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Keranjang->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-04 17:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:25:17 --> Cart Class Initialized
+INFO - 2024-06-04 17:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:25:29 --> Cart Class Initialized
+INFO - 2024-06-04 17:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:25:31 --> Cart Class Initialized
+INFO - 2024-06-04 17:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:25:32 --> Cart Class Initialized
+INFO - 2024-06-04 17:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:25:33 --> Cart Class Initialized
+INFO - 2024-06-04 17:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:25:33 --> Cart Class Initialized
+INFO - 2024-06-04 17:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:36:31 --> Cart Class Initialized
+INFO - 2024-06-04 17:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:36:50 --> Cart Class Initialized
+INFO - 2024-06-04 17:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:36:54 --> Cart Class Initialized
+INFO - 2024-06-04 17:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:36:54 --> Cart Class Initialized
+INFO - 2024-06-04 17:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:36:59 --> Cart Class Initialized
+INFO - 2024-06-04 17:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:37:05 --> Cart Class Initialized
+INFO - 2024-06-04 17:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:37:05 --> Cart Class Initialized
+INFO - 2024-06-04 17:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-04 17:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
